@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Kami</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .elegant-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .about-background {
+            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('/api/placeholder/1000/1000');
+            background-size: cover;
+            background-position: center;
+        }
+        .message-input {
+            border-bottom: 2px solid #4a5568;
+            transition: border-color 0.3s ease;
+        }
+        .message-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+            /* Gold Color Palette */
+    .bg-gold-500 { background-color: #D4AF37; }
+    .text-gold-500 { color: #D4AF37; }
+    .border-gold-500 { border-color: #D4AF37; }
+    .hover\:bg-gold-600:hover { background-color: #C0A028; }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+
+    <div id="app" class="max-w-md mx-auto bg-white shadow-lg">
+        <!-- Header Section -->
+        <header class="relative h-screen text-center">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('wedding2.jpg');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="relative z-10 flex flex-col justify-center items-center h-full text-white p-4">
+                <h1 class="elegant-font text-4xl mb-4">Sarah & John</h1>
+                <p class="text-xl mb-6">We're Getting Married!</p>
+                <div id="countdown" class="flex space-x-4 text-center"></div>
+            </div>
+        </header>
+
+
+
+
+
+
+        <!-- Pasangan Section with Background Image -->
+        <section class="py-16 text-center about-background">
+            <h2 class="elegant-font text-3xl mb-8">Tentang Kami</h2>
+            <div class="flex justify-center space-x-8 mb-8">
+                <div class="transform transition duration-500 hover:scale-105">
+                    <img src="wedding.jpg" alt="Sarah" class="rounded-full mx-auto mb-4 border-4 border-gray-300 shadow-lg">
+                    <h3 class="text-xl">Sarah</h3>
+                </div>
+                <div class="transform transition duration-500 hover:scale-105">
+                    <img src="wedding.jpg" alt="John" class="rounded-full mx-auto mb-4 border-4 border-gray-300 shadow-lg">
+                    <h3 class="text-xl">John</h3>
+                </div>
+            </div>
+            <p class="max-w-md mx-auto px-4 italic">Kami berdua sangat senang berbagi momen spesial ini dengan Anda. Dengan cinta dan kebahagiaan, kami mengundang Anda untuk menjadi bagian dari cerita kami.</p>
+        </section>
+<!-- Galeri Foto Prewedding -->
+<section class="py-16 bg-gray-100">
+    <h2 class="elegant-font text-3xl text-center mb-12">Galeri Prewedding</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 px-4">
+        <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="wedding3.jpg" alt="Foto Prewedding 1" class="w-full h-60 object-cover">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="wedding3.jpg" alt="Foto Prewedding 2" class="w-full h-60 object-cover">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="wedding3.jpg" alt="Foto Prewedding 3" class="w-full h-60 object-cover">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+            <img src="wedding3.jpg" alt="Foto Prewedding 4" class="w-full h-60 object-cover">
+        </div>
+
+    </div>
+</section>
+
+
+ <!-- Elegant Event and Location Section -->
+<section class="bg-gradient-to-br from-gray-50 to-gray-100 py-20 text-center">
+    <div class="container mx-auto px-4">
+        <h2 class="elegant-font text-4xl text-gray-800 mb-12 tracking-wider">
+            <span class="border-b-4 border-gold-500 pb-2">Momen Spesial</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <!-- Akad Nikah Card -->
+            <div class="bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl p-8">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gold-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    <h3 class="elegant-font text-3xl text-gray-800 mb-4">Akad Nikah</h3>
+                </div>
+                <div class="space-y-3 text-gray-700">
+                    <p class="text-xl font-semibold">Rabu, 30 April 2025</p>
+                    <p class="text-lg">Pukul 10:00 WIB</p>
+                    <p class="italic text-base">Gedung Pernikahan Grand Ballroom</p>
+                </div>
+            </div>
+
+            <!-- Resepsi Card -->
+            <div class="bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl p-8">
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gold-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="elegant-font text-3xl text-gray-800 mb-4">Resepsi</h3>
+                </div>
+                <div class="space-y-3 text-gray-700">
+                    <p class="text-xl font-semibold">Rabu, 30 April 2025</p>
+                    <p class="text-lg">Pukul 19:00 WIB</p>
+                    <p class="italic text-base">Gedung Pernikahan Grand Ballroom</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Section -->
+        <div class="mt-16 max-w-4xl mx-auto">
+            <h2 class="elegant-font text-4xl text-gray-800 mb-12 tracking-wider text-center">
+                <span class="border-b-4 border-gold-500 pb-2">Lokasi</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Location Details -->
+                <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col justify-center">
+                    <div class="mb-6 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gold-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <h3 class="elegant-font text-3xl text-gray-800">Pasar Soponyono</h3>
+                    </div>
+                    <div class="text-center text-gray-700 space-y-3">
+                        <p class="text-lg">Rungkut, Surabaya</p>
+                        <p class="italic text-base">Tempat bersejarah penuh kenangan</p>
+                    </div>
+                </div>
+
+                <!-- Embedded Map -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.560280844841!2d112.77973381528002!3d-7.333631294696008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf259cd3e5f%3A0xa1e0cf979340d53f!2sPasar%20Soponyono!5e0!3m2!1sen!2sid!4v1695461203771!5m2!1sen!2sid" 
+                        width="80%" 
+                        height="4800" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full object-cover"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+        <!-- Ucapan Section with Elegant Design -->
+        <section class="py-16 bg-gradient-to-br from-gray-100 to-gray-200">
+            <h2 class="elegant-font text-3xl text-center mb-12">Kirim Ucapan</h2>
+            <form id="ucapanForm" class="max-w-md mx-auto px-6">
+                <div class="mb-6 relative">
+                    <input type="text" id="nama" placeholder=" " required class="message-input peer w-full pb-2 bg-transparent border-none focus:outline-none text-gray-700">
+                    <label for="nama" class="absolute left-0 -top-4 text-gray-600 text-sm transition-all peer-placeholder-shown:top-0 peer-focus:-top-4 peer-focus:text-sm">Nama Anda</label>
+                </div>
+                <div class="mb-6 relative">
+                    <textarea id="ucapan" placeholder=" " required rows="4" class="message-input peer w-full pb-2 bg-transparent border-none focus:outline-none text-gray-700 resize-none"></textarea>
+                    <label for="ucapan" class="absolute left-0 -top-4 text-gray-600 text-sm transition-all peer-placeholder-shown:top-0 peer-focus:-top-4 peer-focus:text-sm">Ucapan untuk Kami</label>
+                </div>
+                <div class="flex items-center mb-6">
+                    <input type="checkbox" id="konfirmasi" class="mr-2 text-indigo-600 focus:ring-indigo-500">
+                    <label for="konfirmasi" class="text-sm text-gray-700">Saya akan hadir dalam acara pernikahan</label>
+                </div>
+                <button type="submit" class="w-full bg-gold-500 text-white py-3 rounded-full hover:bg-gold-200 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gold-200 focus:ring-opacity-50">
+                    Kirim Ucapan
+                </button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-200 py-8 text-center">
+            <p>© 2024 Sarah & John Wedding</p>
+        </footer>
+    </div>
+
+    <!-- Modal for Attendance Confirmation -->
+    <div id="konfirmasiModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg w-96">
+            <h2 class="text-2xl mb-4 text-center">Konfirmasi Kehadiran</h2>
+            <form id="konfirmasiForm">
+                <div class="mb-4">
+                    <label for="konfirmasiNama" class="block text-sm mb-2">Nama Lengkap</label>
+                    <input type="text" id="konfirmasiNama" required class="w-full border-2 border-gray-300 p-2 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="konfirmasiEmail" class="block text-sm mb-2">Email</label>
+                    <input type="email" id="konfirmasiEmail" required class="w-full border-2 border-gray-300 p-2 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="konfirmasiPesan" class="block text-sm mb-2">Pesan Tambahan</label>
+                    <textarea id="konfirmasiPesan" rows="3" class="w-full border-2 border-gray-300 p-2 rounded"></textarea>
+                </div>
+                <div class="flex space-x-4">
+                    <button type="submit" class="flex-1 bg-green-600 text-white py-2 rounded hover:bg-green-700">Kirim</button>
+                    <button type="button" id="batalKonfirmasi" class="flex-1 bg-red-600 text-white py-2 rounded hover:bg-red-700">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <!-- Add audio element before the main app div -->
+        <audio id="backgroundMusic" loop autoplay style="display:none;">
+            <source src="Westlife.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const weddingDate = luxon.DateTime.local(2025, 4, 30, 10, 0);
+            const now = luxon.DateTime.local();
+            const diff = weddingDate.diff(now, ['days', 'hours', 'minutes', 'seconds']);
+            
+            document.getElementById('countdown').innerHTML = `
+                <div class="text-center">
+                    <span class="text-2xl font-bold block">${Math.max(0, Math.floor(diff.days))}</span>
+                    <span>Hari</span>
+                </div>
+                <div class="text-center">
+                    <span class="text-2xl font-bold block">${Math.max(0, Math.floor(diff.hours))}</span>
+                    <span>Jam</span>
+                </div>
+                <div class="text-center">
+                    <span class="text-2xl font-bold block">${Math.max(0, Math.floor(diff.minutes))}</span>
+                    <span>Menit</span>
+                </div>
+                <div class="text-center">
+                    <span class="text-2xl font-bold block">${Math.max(0, Math.floor(diff.seconds))}</span>
+                    <span>Detik</span>
+                </div>
+            `;
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Form Submission for Wishes
+        document.getElementById('ucapanForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const ucapan = document.getElementById('ucapan').value;
+            const konfirmasi = document.getElementById('konfirmasi').checked;
+
+            // Simpan data ucapan (contoh sederhana)
+            const pesanUcapan = `
+                Nama: ${nama}
+                Ucapan: ${ucapan}
+                Konfirmasi Kehadiran: ${konfirmasi ? 'Ya' : 'Tidak'}
+            `;
+
+            // Animasi dan notifikasi
+            Swal.fire({
+                title: 'Terima Kasih!',
+                text: 'Ucapan Anda telah terkirim',
+                icon: 'success',
+                confirmButtonText: 'Tutup'
+            });
+
+            this.reset();
+        });
+
+        // Attendance Confirmation Modal
+        const konfirmasiModal = document.getElementById('konfirmasiModal');
+        const konfirmasiHadirBtn = document.getElementById('konfirmasiHadirBtn');
+        const batalKonfirmasi = document.getElementById('batalKonfirmasi');
+
+        // Open Modal
+        konfirmasiHadirBtn.addEventListener('click', () => {
+            konfirmasiModal.classList.remove('hidden');
+        });
+
+        // Close Modal
+        batalKonfirmasi.addEventListener('click', () => {
+            konfirmasiModal.classList.add('hidden');
+        });
+
+        // Handle Attendance Confirmation Form
+        document.getElementById('konfirmasiForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const nama = document.getElementById('konfirmasiNama').value;
+            const email = document.getElementById('konfirmasiEmail').value;
+            const pesan = document.getElementById('konfirmasiPesan').value;
+
+            // Prepare email data (Note: This is a client-side mock. In a real-world scenario, 
+            // you would use a backend service to send emails securely)
+            const emailData = {
+                to: 'rayhansaneval03@gmail.com',
+                subject: 'Konfirmasi Kehadiran Pernikahan',
+                body: `
+                    Nama Peserta: ${nama}
+                    Email: ${email}
+                    Pesan Tambahan: ${pesan}
+                `
+            };
+
+            try {
+                // In a real implementation, you would send this to a backend service
+                // that handles email sending securely
+                Swal.fire({
+                    title: 'Terima Kasih!',
+                    text: 'Konfirmasi kehadiran Anda telah terkirim',
+                    icon: 'success',
+                    confirmButtonText: 'Tutup'
+                });
+
+                // Close the modal
+                konfirmasiModal.classList.add('hidden');
+
+                // Reset the form
+                this.reset();
+            } catch (error) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Gagal mengirim konfirmasi. Silakan coba lagi.',
+                    icon: 'error',
+                    confirmButtonText: 'Tutup'
+                });
+            }
+        });
+        // Add music control functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            const musicToggleBtn = document.createElement('button');
+            musicToggleBtn.innerHTML = '🎵 Toggle Music';
+            musicToggleBtn.classList.add('fixed', 'bottom-4', 'right-4', 'bg-gold-500', 'text-white', 'p-2', 'rounded-full', 'z-50');
+            
+            musicToggleBtn.addEventListener('click', () => {
+                if (backgroundMusic.paused) {
+                    backgroundMusic.play();
+                } else {
+                    backgroundMusic.pause();
+                }
+            });
+
+            document.body.appendChild(musicToggleBtn);
+
+            // Attempt to autoplay on user interaction
+            document.addEventListener('click', () => {
+                backgroundMusic.play().catch(error => {
+                    console.log('Autoplay prevented', error);
+                });
+            }, { once: true });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
